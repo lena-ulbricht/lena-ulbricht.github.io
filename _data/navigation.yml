@@ -5,23 +5,23 @@
 # prevent it from being included in the site.
 
 main:
+  - title: "Biography"
+    url: /bio/    
+
+  - title: "Research"
+    url: /research/    
+    
+  - title: "Media"
+    url: /media/
+        
   - title: "Publications"
     url: /publications/
+    
+  - title: "Press Kit"
+    url: /presskit/
+    
+  - title: "Contact"
+    url: /contact/
 
-  - title: "Talks"
-    url: /talks/    
-
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
-    url: /cv/
-    
-  - title: "Guide"
-    url: /markdown/
+  - title: "Impressum"
+    url: /impressum/
