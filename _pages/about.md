@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "AI | Big Data | Algorithms | Regulation and Governance | Security | Emerging Technologies"
+title: "AI | Big Data | Algorithms | Regulation | Security | Emerging Technologies"
 author_profile: true
 redirect_from: 
   - /about/
