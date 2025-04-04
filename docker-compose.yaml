@@ -1,8 +1,12 @@
+version: '3.8'
 services:
   jekyll-site:
-    image: jekyll-site
-    build: .
-    volumes: [.:/usr/src/app]
-    ports: [4000:4000]
-    user: 1000:1000
-    environment: [JEKYLL_ENV=docker]
+    image: jekyll/jekyll:latest
+    platform: linux/amd64
+    command: bash -c "gem install webrick && jekyll serve --watch --host 0.0.0.0"
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "4000:4000"
+    environment:
+      JEKYLL_ENV: development
