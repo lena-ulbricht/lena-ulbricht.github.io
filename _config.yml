@@ -28,5 +28,11 @@ sass:
 #Permalink Structure
 permalink: /:name/
 
+#Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
 #Encoding
 encoding: "utf-8"
