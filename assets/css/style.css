@@ -200,7 +200,7 @@ footer {
   font-size: 0.75rem;
 }
 
-/* Publucation Styling */
+/* Publication Styling */
 
 .pub-card {
   background-color: white;
@@ -256,4 +256,11 @@ footer {
 .pub-venue h4 a:hover {
   color: black;
   text-decoration: underline;
+}
+
+/* Remove Hover color after visit */
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
