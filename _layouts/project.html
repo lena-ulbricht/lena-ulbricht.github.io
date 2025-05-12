@@ -1,0 +1,34 @@
+---
+layout: default
+title: Project
+---
+
+<div class="project-detail">
+    <h1>{{ page.title }}</h1>
+  
+    {% if page.image %}
+      <img class="project-image" src="{{ page.image }}" alt="{{ page.title }}">
+    {% endif %}
+  
+    {% if page.image_credit %}
+      <div class="image-credit">
+        {{ page.image_credit }}
+      </div>
+    {% endif %}
+
+    {% if page.tags %}
+      <p class="tags">
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </p>
+    {% endif %}
+  
+    
+    <div class="project-meta">
+      <p><strong>Goal:</strong> {{ page.goal }}</p>
+      <p><strong>Approach:</strong> {{ page.approach }}</p>
+      {% if page.funding %}<p><strong>Funding:</strong> {{ page.funding }}</p>{% endif %}
+      {% if page.affiliation %}<p><strong>Affiliation:</strong> {{ page.affiliation }}</p>{% endif %}
+    </div>
+  </div>

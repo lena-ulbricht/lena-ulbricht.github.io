@@ -5,6 +5,24 @@ permalink: /research/
 ---
 
 <div class="subpage">
-    <h3>Research Projects</h3>
+    <h3>Fields of Research</h3>
     <p>Here you will find details about ongoing and completed research projects.</p>
 </div>
+
+<div class="gallery">
+    {% for project in site.projects %}
+      <div class="card">
+        <a href="{{ project.url }}">
+          <img src="{{ project.image }}" alt="{{ project.title }}">
+          <h3>{{ project.title }}</h3>
+          {% if project.tags %}
+            <p class="tags">
+              {% for tag in project.tags %}
+                <span class="tag">{{ tag }}</span>
+              {% endfor %}
+            </p>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
