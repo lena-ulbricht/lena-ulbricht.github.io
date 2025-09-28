@@ -5,24 +5,20 @@ permalink: /research/
 ---
 
 <div class="subpage">
-    <h3>Fields of Research</h3>
-    <p>Here you will find details about ongoing and completed research projects.</p>
+    <h3>Research</h3>
+    <p>Below you can explore my current research projects and collaborations at the intersection of digital technologies, platforms, democracy and governance.</p>
 </div>
 
+{% assign sorted_projects = site.projects | sort: "order" %}
 <div class="gallery">
-    {% for project in site.projects %}
+  {% for project in sorted_projects %}
       <div class="card">
         <a href="{{ project.url }}">
           <img src="{{ project.image }}" alt="{{ project.title }}">
           <h3>{{ project.title }}</h3>
-          {% if project.tags %}
-            <p class="tags">
-              {% for tag in project.tags %}
-                <span class="tag">{{ tag }}</span>
-              {% endfor %}
-            </p>
-          {% endif %}
         </a>
       </div>
-    {% endfor %}
+  {% endfor %}
   </div>
+
+  

@@ -1,15 +1,12 @@
----
-layout: default
-title: Home
----
-
-<div class="hero">
-    <div class="landing-container">
+I"—<div class="landing">
+    <h1 class="-title">Home</h1>
+    <div class="hero-container">
             <div class="hero-image-container">
-                <img src="{{ site.baseurl }}/assets/images/profile.png" alt="Profile Picture" class="hero-image">
+                <img src="/assets/images/profile.png" alt="Profile Picture" class="hero-image" />
             </div>
         <div class="bio">
             <p>University professor and public expert in politics and digital technologies.</p>
         </div>
     </div>
 </div>
+:ET

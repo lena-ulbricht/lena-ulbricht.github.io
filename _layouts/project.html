@@ -15,20 +15,14 @@ title: Project
         {{ page.image_credit }}
       </div>
     {% endif %}
-
-    {% if page.tags %}
-      <p class="tags">
-        {% for tag in page.tags %}
-          <span class="tag">{{ tag }}</span>
-        {% endfor %}
-      </p>
-    {% endif %}
-  
     
     <div class="project-meta">
-      <p><strong>Goal:</strong> {{ page.goal }}</p>
-      <p><strong>Approach:</strong> {{ page.approach }}</p>
-      {% if page.funding %}<p><strong>Funding:</strong> {{ page.funding }}</p>{% endif %}
-      {% if page.affiliation %}<p><strong>Affiliation:</strong> {{ page.affiliation }}</p>{% endif %}
+      <h3>Project:</h3>
+        <div class="project-block">{{ page.project | markdownify }}</div>
+
+      <h3>Approach:</h3>
+        <div class="project-block">{{ page.approach | markdownify }}</div>
+      {% if page.members %}<h3><strong>Members:</strong> {{ page.members }}</h3>{% endif %}
+      {% if page.duration %}<h3><strong>Duration:</strong> {{ page.duration }}</h3>{% endif %}
     </div>
   </div>
