@@ -1,15 +1,36 @@
+/* --- BASE COLORS --- */
 body {
-    font-family: 'Nunito', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  background-color: #f7f7f7;
+  color: #3C3C3C;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  background-color: #2E3440;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- NAVIGATION --- */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+nav a:hover {
+  color: #88C0D0; /* light teal hover */
+  text-decoration: underline;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
 }
 
 nav ul {
@@ -22,25 +43,12 @@ nav li {
     margin: 0 10px;
 }
 
-nav a {
-    color: #f5f5f5;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-a:visited {
-  color: inherit;
-  text-decoration: none;
-}
-
 footer {
     text-align: center;
     padding: 10px;
     background-color: #f5f5f5;
     color: #333;
+    margin-top: 20px;
     margin-top: 20px;
 }
 
@@ -60,7 +68,6 @@ footer {
 .hero {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 20px;
 }
 
 .hero-container {
@@ -69,7 +76,6 @@ footer {
   gap: 30px;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 .landing-container {
@@ -85,8 +91,6 @@ footer {
 
 .hero-image-container {
   flex-shrink: 0;          /* Prevents image from shrinking */
-  padding-top: 20px;
-
 }
 
 .hero-image {
@@ -96,8 +100,63 @@ footer {
   display: block;
 }
 
+/* --- ABOUT PAGE ONLY --- */
+.about-page .hero-container {
+  display: flex !important;         /* Force flex layout */
+  align-items: flex-start;          /* Align image + text at the top */
+  justify-content: center;
+  gap: 40px;                        /* Space between image and text */
+  text-align: left;                 /* Align text to the left */
+  flex-wrap: wrap;                  /* Allow stacking on smaller screens */
+  margin-top: 20px;                 /* Optional: spacing under "About" title */
+}
+
+.about-page .hero-image-container {
+  flex-shrink: 0;                   /* Prevent image from shrinking */
+}
+
+.about-page .hero-image {
+  width: 280px;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.about-page .bio {
+  max-width: 600px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.about-page .bio p {
+  margin-bottom: 1.2rem;
+}
+
+/* --- RESPONSIVE MOBILE STYLING --- */
+@media (max-width: 768px) {
+  .about-page .hero-container {
+    flex-direction: column;         /* Stack image and text */
+    align-items: center;            /* Center both */
+    text-align: left;               /* Keep text readable */
+    gap: 20px;
+  }
+
+  .about-page .hero-image {
+    width: 80%;
+    max-width: 320px;
+  }
+
+  .about-page .bio {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+}
+
 .bio {
   margin-top: 0;             /* Ensures it starts at top */
+  text-align: center;
+  margin-bottom: 0;             /* Ensures it starts at top */
 }
 
 .bio h2 {
@@ -108,6 +167,35 @@ footer {
 .bio p {
     font-size: 1.1rem;
     line-height: 1.6;
+}
+
+.bio-links ul {
+  list-style: disc;             /* shows bullets */
+  display: flex;                /* places items side by side */
+  justify-content: center;      /* centers the row */
+  align-items: center;
+  gap: 2rem;                    /* space between bullets */
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.bio-links li {
+  list-style-position: inside;
+}
+
+.bio-links a {
+  text-decoration: underline;
+  color: #333;
+  font-weight: 500;
+}
+
+.bio-links a:hover {
+  text-decoration: underline;
+}
+
+/* --- Override global .bio for ABOUT PAGE only --- */
+.about-page .bio {
+  text-align: left !important;
 }
 
 /* Subpage Content Styling */
@@ -138,7 +226,7 @@ footer {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     max-width: 1200px;           /* controls full grid width */
     margin: 2rem auto;           /* auto = horizontally center */
@@ -303,4 +391,142 @@ address {
   text-align: left;
   line-height: 1.6;
   margin-top: 10px;
+}
+
+/* Static Formatting of Grid and Main Page */
+
+/* Reduce vertical spacing below the "About" title */
+.about-page .about-title {
+  margin-bottom: 0.5rem;  /* was probably ~1.5–2rem before */
+}
+
+/* Reduce extra top margin on the hero container */
+.about-page .hero-container {
+  margin-top: 0 !important; /* remove any inherited top margin */
+  padding-top: 0 !important; /* ensure no padding adds space */
+}
+
+/* Project Page styling */
+.project-detail a {
+  color: #000;               /* black links */
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.project-detail a:visited {
+  color: #000;               /* keep black after visiting */
+}
+
+.project-detail a:hover,
+.project-detail a:focus {
+  color: #000;               /* no color change on hover */
+  text-decoration: underline; /* consistent underline */
+}
+
+/* Optional: make the overall About section tighter */
+.about-page .hero {
+  padding-top: 20px;  /* less top padding overall */
+  padding-bottom: 20px;
+}
+
+.gallery a {
+  color: #000;                /* black links */
+  text-decoration: underline; /* optional, for consistency */
+  font-weight: 500;
+}
+
+.gallery a:visited {
+  color: #000;                /* stay black even after clicking */
+  text-decoration: underline;
+}
+
+.subpage .teams-image {
+  text-align: center;       /* center the image */
+  margin-top: 1.5rem;         /* space above and below */
+}
+
+.subpage .teams-image img {
+  width: 80%;               /* 40% smaller than before (since 100% → 60%) */
+  max-width: 600px;         /* prevent it from getting too large */
+  height: auto;
+}
+
+.subpage ul {
+  list-style-position: inside;  /* bring bullets inside the text block */
+  text-align: left;             /* left-align the text */
+  padding-left: 0;              /* remove extra indent from default ul */
+  margin-left: 0;               /* fully align to left edge */
+}
+
+/* Media page set up of externally embedded Videos */
+
+.video-container {
+  position: relative;
+  width: 50%;              /* video takes up 60% of the page width */
+  aspect-ratio: 16 / 9;    /* modern way to keep correct proportions */
+  margin: 1rem auto 2rem auto;       /* centers the video horizontally */
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #000;        /* fallback before video loads */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;             /* fills the container */
+  height: 100%;
+  border: 0;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    width: 90%;  /* more room on phones */
+  }
+}
+
+.thumbnail-image {
+  text-align: center;
+  margin: 1rem auto 2rem auto;  /* spacing above and below */
+}
+
+.thumbnail-image img {
+  width: 50%;                  /* match video width */
+  max-width: 835px;            /* prevents it from getting too large */
+  height: auto;                /* keep proportions */
+  border-radius: 8px;          /* optional: soft rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow to match the video */
+}
+
+/* Social Media link set up, horizontal row */
+
+.social-links {
+  display: flex;                 /* puts them in a row */
+  justify-content: center;       /* centers the whole row */
+  align-items: center;
+  gap: 1.5rem;                   /* space between icons */
+  margin-top: 1.5rem;
+}
+
+.social-links a {
+  display: inline-flex;          /* ensures icons scale evenly */
+  align-items: center;
+  justify-content: center;
+  width: 36px;                   /* controls icon box size */
+  height: 36px;
+}
+
+.social-links img {
+  width: 100%;                   /* makes all icons the same size */
+  height: 100%;
+  opacity: 0.85;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  filter: brightness(0);         /* makes all icons black */
+}
+
+.social-links img:hover {
+  transform: scale(1.15);
+  opacity: 1;
+  filter: brightness(0.3) sepia(1) hue-rotate(190deg) saturate(300%) brightness(1.1);
 }

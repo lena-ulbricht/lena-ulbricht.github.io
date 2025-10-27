@@ -2,14 +2,21 @@
 layout: default
 title: Home
 ---
+<div class="bio">
+    <p>University professor and public expert in politics and digital technologies.</p>
+</div>
 
 <div class="hero">
     <div class="landing-container">
-            <div class="hero-image-container">
-                <img src="{{ site.baseurl }}/assets/images/profile.png" alt="Profile Picture" class="hero-image">
-            </div>
-        <div class="bio">
-            <p>University professor and public expert in politics and digital technologies.</p>
+        <div class="hero-image-container">
+            <img src="{{ site.baseurl }}/assets/images/profile.png" alt="Profile Picture" class="hero-image">
         </div>
     </div>
+</div>
+
+<div class="bio-links">
+    <ul>
+        <li><a href="{{ site.baseurl }}/assets/pdfs/lenaulbricht_shortbio.pdf">Short Bio (Deutsch/English)</a></li>
+        <li><a href="{{ site.baseurl }}/assets/pdfs/ulbricht_fullcv.pdf">Full CV (English) </a></li>
+    </ul>
 </div>

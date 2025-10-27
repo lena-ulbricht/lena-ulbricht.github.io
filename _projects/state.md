@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Theory of the Digital State
+order: 1
 image: /assets/images/digital.jpg
 
 image_credit: <em>"Future Affairs 2019" by <a href="https://www.flickr.com/photos/re-publica/" target="_blank" rel="noopener">re:publica Campus rpCampus </a> is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank" rel="noopener">CC BY-SA 2.0</a>.</em>
@@ -15,7 +16,9 @@ project: >
 approach: >
     Theoretically, the project draws on several strands of scholarship: theories on the political qualities of technology (Langdon Winner, Lewis Mumford), state theory, and approaches to governing by numbers (e.g., Theodore Porter, James Scott, Marion Fourcade). In addition, regime theory and democratic theory provide key analytical lenses. Empirically, the project relies on case studies. These include strategies of the European Union to promote artificial intelligence while simultaneously tailoring it to European values and norms. Another area of investigation is the development of “sovereign digital infrastructures.” A further example concerns citizen and identity databases, which profoundly shape the relationship between the state and the individual.
 
-members: In collaboration with Frederik Heinz (University of Hildesheim)
+members: >
+    In collaboration with Frederik Heinz (University of Hildesheim)
 
-duration: 2025—2027
+duration: >
+    2025–2027
 ---

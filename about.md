@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-<div class="hero">
+<div class="hero about-page">
     <h1 class="about-title">About</h1>
     <div class="hero-container">
             <div class="hero-image-container">

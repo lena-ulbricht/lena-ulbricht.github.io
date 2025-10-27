@@ -22,7 +22,16 @@ title: Project
 
       <h3>Approach:</h3>
         <div class="project-block">{{ page.approach | markdownify }}</div>
-      {% if page.members %}<h3><strong>Members:</strong> {{ page.members }}</h3>{% endif %}
-      {% if page.duration %}<h3><strong>Duration:</strong> {{ page.duration }}</h3>{% endif %}
-    </div>
-  </div>
+        {% if page.members %}
+          <p><strong>Members:</strong> {{ page.members }}</p>
+        {% endif %}
+
+        {% if page.duration %}
+          <p><strong>Duration:</strong> {{ page.duration }}</p>
+        {% endif %}
+      
+        {% if page.outputs %}
+        <p><strong>Outputs:</strong> {{ page.outputs | markdownify }}</p>
+        {% endif %}
+        </div>
+</div>

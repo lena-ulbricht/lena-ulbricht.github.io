@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Civil Society Engagement against Disinformation in Latin America
+order: 4 
 image: /assets/images/latinamerica.jpg
 
 image_credit: '<em>"Chile, Santiago de Chile" by <a href="https://www.flickr.com/photos/armingruber/" target="_blank" rel="noopener">armingruber</a> is licensed under <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener">CC BY 2.0</a>.</em>'
@@ -13,7 +14,9 @@ approach: >
 
     The study concentrates on Brazil, Colombia, and Chile—countries where disinformation has played a decisive role in recent years, particularly in presidential elections, constitutional referendums, and plebiscites. Drawing on extensive interviews with civil society actors, it examines whether and how these organizations are able to counter disinformation and polarization, or whether they may reinforce them. Initial findings suggest that effective strategies against disinformation cannot rely solely on information control—such as fact-checking and debunking—but must also include preventive approaches, ranging from prebunking and inoculation to broader initiatives in media literacy, political education, and the dissemination of counter-narratives.
 
-members: In collaboration with Dr. Thamy Pogrebinschi (WZB Berlin Social Science Center)
+members: >
+    In collaboration with Dr. Thamy Pogrebinschi (WZB Berlin Social Science Center)
 
-duration: 2024—2025, funded by WZB Seed Money
+duration: >
+    2024–2025, funded by WZB Seed Money
 ---
