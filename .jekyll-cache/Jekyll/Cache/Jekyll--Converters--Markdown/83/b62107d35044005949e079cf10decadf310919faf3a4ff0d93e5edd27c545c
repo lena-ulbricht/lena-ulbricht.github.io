@@ -1,20 +1,14 @@
----
-layout: default
-title: About
-permalink: /about/
----
-
-<div class="hero about-page">
+I"$	<div class="hero about-page">
     <h1 class="about-title">About</h1>
     <div class="hero-container">
             <div class="hero-image-container">
-                <img src="{{ site.baseurl }}/assets/images/about.jpg" alt="Profile Picture" class="hero-image">
+                <img src="/assets/images/about.jpg" alt="Profile Picture" class="hero-image" />
             </div>
         <div class="bio">
             <div class="bio-links">
                 <ul>
-                    <li><a href="{{ site.baseurl }}/assets/pdfs/lenaulbricht_shortbio.pdf">Short Bio (Deutsch/English)</a></li>
-                    <li><a href="{{ site.baseurl }}/assets/pdfs/ulbricht_fullcv.pdf">Full CV (English)</a></li>
+                    <li><a href="/assets/pdfs/lenaulbricht_shortbio.pdf">Short Bio (Deutsch/English)</a></li>
+                    <li><a href="/assets/pdfs/ulbricht_fullcv.pdf">Full CV (English)</a></li>
                 </ul>
             </div>
             <p>I am Professor of Political Science and Digital Technologies at the University of Hildesheim, based in Berlin. My work explores how digital technologies interact with democracy—shaping political norms, practices, and regulation. I am especially interested in the politics of technology governance and how rules for digital platforms are debated and implemented. Recently, I have studied platform types that are rarely in the spotlight, including public security platforms, gaming platforms, and online pornography platforms. I also develop innovative methods and datasets to better understand digitalization in political life.</p>
@@ -23,3 +17,4 @@ permalink: /about/
         </div>
     </div>
 </div>
+:ET
