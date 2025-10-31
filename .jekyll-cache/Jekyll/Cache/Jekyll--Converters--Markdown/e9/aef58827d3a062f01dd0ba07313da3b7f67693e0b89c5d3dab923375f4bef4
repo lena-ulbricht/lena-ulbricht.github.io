@@ -1,6 +1,12 @@
-I"ë<div class="hero">
+I"ø<div class="hero about-page">
     <h1 class="about-title">About</h1>
     <div class="hero-container">
+        <div class="bio-links">
+        <ul>
+            <li><a href="/assets/pdfs/lenaulbricht_shortbio.pdf">Short Bio (Deutsch/English)</a></li>
+            <li><a href="/assets/pdfs/ulbricht_fullcv.pdf">Full CV (English)</a></li>
+        </ul>
+    </div>
             <div class="hero-image-container">
                 <img src="/assets/images/about.jpg" alt="Profile Picture" class="hero-image" />
             </div>
