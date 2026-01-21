@@ -1,25 +1,21 @@
----
-layout: default
-title: About
-permalink: /about/
----
-
-<div class="hero about-page">
+I"�<div class="hero about-page">
     <h1 class="about-title">About</h1>
     <div class="hero-container">
             <div class="hero-image-container">
-                <img src="{{ site.baseurl }}/assets/images/about.jpg" alt="Profile Picture" class="hero-image">
+                <img src="/assets/images/about.jpg" alt="Profile Picture" class="hero-image" />
             </div>
         <div class="bio">
-            <div class="bio-links">
-                <ul>
-                    <li><a href="{{ site.baseurl }}/assets/pdfs/lenaulbricht_shortbio.pdf">Short Bio (Deutsch/English)</a></li>
-                    <li><a href="{{ site.baseurl }}/assets/pdfs/ulbricht_fullcv.pdf">Full CV (English)</a></li>
-                </ul>
-            </div>
             <p>I am Professor of Political Science and Digital Technologies at the University of Hildesheim, based in Berlin. My work explores how digital technologies interact with democracy—shaping political norms, practices, and regulation. I am especially interested in the politics of technology governance and how rules for digital platforms are debated and implemented. Recently, I have studied platform types that are rarely in the spotlight, including public security platforms, gaming platforms, and online pornography platforms. I also develop innovative methods and datasets to better understand digitalization in political life.</p>
             <p>Before joining Hildesheim, I led two research groups at the Weizenbaum Institute in Berlin and worked as a researcher at the Berlin Social Science Center (WZB). I have also held a professorship at the Technical University of Munich, and my academic path includes a PhD from Humboldt University of Berlin and a habilitation from the University of Bremen. Beyond academia, I have contributed expertise to the OECD, the German Expert Commission on Research and Innovation, and VDI-VDE-IT GmbH.</p>
-            <p>I hold a Master’s degree from Sciences Po in Paris and a Master’s degree in Political Science from Freie Universität Berlin. Alongside my scientific work, I play basketball and enjoy music by Violeta Parra. I also co-host the podcast <a href="https://purplecode.org/" target="_blank" rel="noopener">PurpleCode (with Bianca Herlo and Sana Ahmed)</a>.</p>
+            <p>I grew up in a Chilean-German family and now live in Berlin with my children. I hold a Master’s degree from Sciences Po in Paris and a Master’s degree in Political Science from Freie Universität Berlin. Earlier in my education, I attended a French school in Berlin and later spent two years living in Paris. Alongside my scientific work, I play basketball and enjoy music by Violeta Parra. I also co-host the podcast <a href="https://purplecode.org/" target="_blank" rel="noopener">PurpleCode (with Bianca Herlo and Sana Ahmed)</a>.</p>
         </div>
     </div>
 </div>
+
+<div class="bio-links">
+    <ul>
+        <li><a href="/assets/pdfs/lenaulbricht_shortbio.pdf">Short Bio (Deutsch/English)</a></li>
+        <li><a href="/assets/pdfs/ulbricht_fullcv.pdf">Full CV (English)</a></li>
+    </ul>
+</div>
+:ET
